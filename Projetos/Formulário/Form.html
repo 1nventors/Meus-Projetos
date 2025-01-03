@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<hmtl lang="en">
+    <main>
+        <head>
+            <h1 id="title">Formulários da TECHBlue</h1>
+            <meta charset="UTF-8">
+            <link rel="stylesheet" href="Form.css">
+            <p id="description">Obrigado pelo seu interesse em fazer parte da nossa equipe! Valorizamos profissionais talentosos, apaixonados por tecnologia e inovação. Preencha as informações abaixo com atenção para que possamos conhecer você melhor.
+
+                Estamos ansiosos para construir o futuro juntos! </p>
+        </head>
+        <body>
+            <fieldset>
+            <form action="submit" id="survey-form">
+                    <label for="name" id="name-label"> Coloque seu nome: <input type="text" id="name" placeholder="Rogério da Silva" required> </label>
+                    <label for="email" id="email-label"> Seu e-mail:</label><input type="email" id="email" placeholder="roger@gmai.com" required> </label>
+                    <label for="number" id="number-label"> Seu número (opcional):<input type="number" id="number" placeholder="12345-6789" min="9" max="11" pattern="[0-9]{5}[0-9]{4}"> </label>
+                    <legend>Tipo de pessoa: (obrigatório)</legend>
+                        <label for="fisica"><input type="radio" id="fisica" name="tipo-pessoa" class="inline" value="1" checked>Pessoa física</label>
+                        <label for="juridica"><input type="radio" id="juridica" name="tipo-pessoa" class="inline" value="2">Pessoa jurídica</label>
+                    </select>
+                    <label for="ocupacao">Selecione:<select name="ocupacao" id="dropdown"></label>
+                        <option value="0">(selecione sua ocupação)</option>
+                        <option value="1">Estudante</option>
+                        <option value="2">CLT</option>
+                        <option value="3">Servidor público</option>
+                        <option value="4">Empresário</option>
+                        <option value="4">Outro...</option>
+                    </select>
+                    <p>Escolha para qual profissão você aplicará na empresa:</p>
+                    <label for="checkbox1"> Cientista de dados<input type="checkbox" class="inline" id="checkbox" name="checkbox1" value="1" checked></label>
+                    <label for="checkbox2"> Cientista da computação<input type="checkbox" class="inline" id="checkbox" name="checkbox2" value="2"></label>
+                    <label for="checkbox3"> Engenheiro de software<input type="checkbox" class="inline" id="checkbox" name="checkbox3" value="3"></label>
+                    <label for="checkbox4"> Analista de dados<input type="checkbox" class="inline" id="checkbox" name="checkbox4" value="4"></label>
+                    <label for="checkbox5"> Gestão de marketing<input type="checkbox" class="inline" id="checkbox" name="checkbox5" value="5"></label>
+                    <label for="biografia"> Conte-nos um pouco sobre você:<textarea name="biografia" id="biografia"></textarea></label>
+                    <input type="submit" name="submit" id="submit">
+                </fieldset>
+            </form>
+        </body>
+    </main>
+</hmtl>
